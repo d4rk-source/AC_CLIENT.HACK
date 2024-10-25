@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="45">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>0</ID>
+      <Description>"Health pointer"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"ac_client.exe"+0017E0A8</Address>
+      <Offsets>
+        <Offset>EC</Offset>
+      </Offsets>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>
