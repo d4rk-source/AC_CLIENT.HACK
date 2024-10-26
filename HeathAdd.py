@@ -1,10 +1,10 @@
 from pymem import *
-from pymem.process import *
+from pymem.process import * #pymem is for reding memory
 import keyboard
 
 shortcut = "F1"
-mem = Pymem("ac_client.exe")
-module = module_from_name(mem.process_handle, "ac_client.exe").lpBaseOfDll
+mem = Pymem("ac_client.exe") #attaches to the game
+module = module_from_name(mem.process_handle, "ac_client.exe").lpBaseOfDll # gets the address of "ac_client.exe"
 offsets = [0xEC]
 
 def getPointerAddr(base, offsets):
@@ -14,8 +14,6 @@ def getPointerAddr(base, offsets):
             addr = mem.read_int(addr + offset)
         addr = addr + offsets[-1]
     return addr
-
-print(module)
 
 while True:
     if keyboard.is_pressed(shortcut):
