@@ -32,7 +32,6 @@ while True:
                     addme -= 25000     
                     mem.write_int(getPointerAddr(module + 0x0017E0A8, offsets), addme)
                     time.sleep(0.001)
-                    print(mem.read_int(getPointerAddr(module + 0x0017E0A8, offsets)))
                     if -1073995490 > mem.read_int(getPointerAddr(module + 0x0017E0A8, offsets)):
                         addme = 1045353216
                         mem.write_int(getPointerAddr(module + 0x0017E0A8, offsets), 0)

@@ -1,0 +1,4 @@
+P->007721E4=Health pointer
+P->00772128=Z axis pointer
+007035B0=first dynamic ammo
+00772238=second dynamic ammo
