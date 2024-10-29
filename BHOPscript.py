@@ -2,7 +2,6 @@ import keyboard
 import pyautogui
 import time
 
-pyautogui.press('space')
 while True:
     if keyboard.is_pressed("space"):
         # Press space continuously while the key is held down
